@@ -195,6 +195,8 @@ local SaveManager = {} do
 
 		local section = tab:AddRightGroupbox('Configuration')
 
+        section:AddDivider()
+
 		section:AddDropdown('SaveManager_ConfigList', { Text = 'Config list', Values = self:RefreshConfigList(), AllowNull = true })
 		section:AddInput('SaveManager_ConfigName',    { Text = 'Config name' })
 
@@ -237,9 +239,7 @@ local SaveManager = {} do
 			end
 
 			self.Library:Notify(string.format('Overwrote config %q', name))
-		end)
-		
-		section:AddButton('Autoload config', function()
+		end):AddButton('Autoload config', function()
 			local name = Options.SaveManager_ConfigList.Value
 			writefile(self.Folder .. '/settings/autoload.txt', name)
 			SaveManager.AutoloadLabel:SetText('Current autoload config: ' .. name)
