@@ -5,8 +5,9 @@ local ThemeManager = {} do
 
 	ThemeManager.Library = nil
 	ThemeManager.BuiltInThemes = {
-		['Default'] 		= { 3, httpService:JSONDecode('{"FontColor":"afafaf","MainColor":"0F0F0F","AccentColor":"5D589D","SelectedTabColor":"1a191d","BackgroundColor":"0F0F0F","OutlineColor":"191919"}') },
-		['Efial Was Here ;)'] 	= { 5, httpService:JSONDecode('{"FontColor":"AEAEAE","MainColor":"0F0F0F","AccentColor":"30406A","SelectedTabColor":"151515","BackgroundColor":"0F0F0F","OutlineColor":"171717"}') },
+		['Default'] 		= { 1, httpService:JSONDecode('{"FontColor":"ACACAC","MainColor":"131313","AccentColor":"926CFF","SelectedTabColor":"191919","BackgroundColor":"111211","OutlineColor":"1c1c1c"}') },
+		['GameSense'] 		= { 2, httpService:JSONDecode('{"FontColor":"919191","MainColor":"101010","AccentColor":"9CB819","BackgroundColor":"111111","OutlineColor":"2D2D2D"}') },
+		['Comet.pub'] 		= { 3, httpService:JSONDecode('{"FontColor":"5E5E5E","MainColor":"0F0F0F","AccentColor":"5D589D","BackgroundColor":"0F0F0F","OutlineColor":"191919"}') },
 	}
 
 	function ThemeManager:ApplyTheme(theme)
