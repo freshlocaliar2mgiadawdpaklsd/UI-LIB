@@ -1,10 +1,11 @@
+-- // Variables
 local ws = game:GetService("Workspace")
 local uis = game:GetService("UserInputService")
 local rs = game:GetService("RunService")
 local hs = game:GetService("HttpService")
 local plrs = game:GetService("Players")
 local stats = game:GetService("Stats")
-
+-- UI Variables
 local library = {
     drawings = {},
     hidden = {},
@@ -15,9 +16,9 @@ local library = {
     ended = {},
     colors = {},
     folders = {
-        main = "Monkey",
-        assets = "Monkey/assets",
-        configs = "Monkey/configs"
+        main = "Linux",
+        assets = "Linux/assets",
+        configs = "Linux/configs"
     },
     shared = {
         initialized = false,
