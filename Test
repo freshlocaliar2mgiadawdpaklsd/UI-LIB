@@ -44,7 +44,7 @@ local theme = {
     textborder = Color3.fromRGB(0, 0, 0),
     cursoroutline = Color3.fromRGB(10, 10, 10),
     font = Drawing.Fonts.Plex,
-    textsize = 11
+    textsize = 14
 }
 -- // Utility Functions
 do
